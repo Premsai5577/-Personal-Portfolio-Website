@@ -6,9 +6,6 @@ This project is a simple personal portfolio website built using HTML5 and CSS. I
 - `index.html` — the main portfolio page
 - `images/profile.svg` — profile illustration used in the hero section
 
-## How to run
-1. Open `index.html` in any modern web browser.
-2. Or use a local web server such as VS Code Live Server for preview.
 
 ## Features
 - Semantic HTML structure
