@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio website showcasing about, skills, and contact details."
+    />
+    <title>Prem Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Legacy styles moved to style.css.
+      :root {
+        --bg: #0f172a;
+        --bg-soft: #111827;
+        --panel: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --accent-soft: #dbeafe;
+        --border: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: #f8fafc;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        background: var(--bg);
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 72px;
+      }
+
+      .brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #dbeafe, #f8fafc);
+        padding: 80px 0;
+      }
+
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        margin: 0 0 16px;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        color: var(--muted);
+        margin-bottom: 24px;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 999px;
+        font-weight: 700;
+        transition: 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .btn-secondary {
+        background: var(--panel);
+        color: var(--text);
+        border: 1px solid var(--border);
+      }
+
+      .profile-image {
+        width: min(380px, 100%);
+        margin: 0 auto;
+        border-radius: 24px;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+        border: 6px solid #fff;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .section-heading {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 4vw, 2.7rem);
+        margin: 0 0 12px;
+      }
+
+      .section-heading p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 32px;
+        align-items: center;
+      }
+
+      .about-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+      }
+
+      .about-card h3 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+
+      .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0;
+      }
+
+      .info-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .skill-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 24px;
+      }
+
+      .skill-card h3 {
+        margin-top: 0;
+      }
+
+      .skill-card ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .skill-card li {
+        margin-bottom: 8px;
+      }
+
+      .contact-wrap {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 30px;
+      }
+
+      .contact-card,
+      .form-card {
+        background: var(--panel);
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        padding: 28px;
+      }
+
+      .contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 24px 0 0;
+      }
+
+      .contact-list li {
+        margin-bottom: 18px;
+      }
+
+      form {
+        display: grid;
+        gap: 18px;
+      }
+
+      label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font: inherit;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: 2px solid rgba(37, 99, 235, 0.2);
+        border-color: var(--accent);
+      }
+
+      textarea {
+        min-height: 130px;
+        resize: vertical;
+      }
+
+      button[type="submit"] {
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 14px 22px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .form-status {
+        min-height: 24px;
+        color: #166534;
+        font-weight: 600;
+      }
+
+      footer {
+        background: var(--bg-soft);
+        color: #fff;
+        padding: 32px 0;
+      }
+
+      .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 768px) {
+        .hero-content,
+        .about-grid,
+        .contact-wrap,
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        nav ul {
+          gap: 0.8rem;
+          justify-content: center;
+        }
+
+        .nav {
+          flex-direction: column;
+          padding: 16px 0;
+        }
+      }
+    -->
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">Prem Sai</div>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div>
+            <p>Hi, I am</p>
+            <h1>Prem Sai</h1>
+            <p>
+              I am a passionate web developer focused on creating clean, responsive,
+              and user-friendly digital experiences.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="#contact">Hire Me</a>
+              <a class="btn btn-secondary" href="#about">Learn More</a>
+            </div>
+          </div>
+
+          <img
+            class="profile-image"
+            src="images/profile.svg"
+            alt="Portrait illustration of Prem Sai"
+          />
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <p>Creative, detail-oriented, and motivated to build meaningful digital products.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>My Story</h3>
+              <p>
+                I am a motivated learner and aspiring web developer with a strong interest in
+                front-end development, responsive design, and problem-solving. I enjoy turning
+                ideas into practical, visually appealing user experiences.
+              </p>
+              <p>
+                My goal is to keep improving my technical skills while creating websites that are
+                accessible, functional, and easy to use.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <h3>Quick Info</h3>
+              <ul class="info-list">
+                <li><strong>Location:</strong> India</li>
+                <li><strong>Email:</strong> psoolla@gitam.in</li>
+                <li><strong>Focus:</strong> Web Development</li>
+                <li><strong>Hobbies:</strong> Running, Sports, Reading Books</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Skills</h2>
+            <p>Tools and technologies I work with to build modern websites.</p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Design</h3>
+              <ul>
+                <li>UI Design</li>
+                <li>Wireframing</li>
+                <li>Color Theory</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Tools</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>Git & GitHub</li>
+                <li>Figma</li>
+                <li>Browser DevTools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact</h2>
+            <p>Let’s connect for projects, collaborations, or opportunities.</p>
+          </div>
+
+          <div class="contact-wrap">
+            <div class="contact-card">
+              <h3>Contact Details</h3>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> psoolla@gitam.in</li>
+                <li><strong>Phone:</strong> 7032822132</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/prem</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noreferrer">github.com/prem</a></li>
+              </ul>
+            </div>
+
+            <div class="form-card">
+              <form id="contactForm" novalidate>
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" required />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+                <div class="form-status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <p>© 2026 Prem Sai</p>
+        <p><a href="#home">Back to top</a></p>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById('contactForm');
+      const status = document.querySelector('.form-status');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          status.textContent = 'Please fill in all required fields correctly.';
+          return;
+        }
+
+        const name = document.getElementById('name').value.trim();
+        status.textContent = `Thank you, ${name}! Your message has been sent successfully.`;
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
